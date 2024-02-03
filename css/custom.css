@@ -1,0 +1,16 @@
+.work-tabs{
+    position: relative;
+    margin-bottom: 15px;
+}
+.work-tabs .tab-buttons{
+    margin-top: 0;
+    width: 100%;
+}
+.work-tabs .tab-buttons .tab-btn {
+    font-size: 20px;
+    line-height: unset;
+    padding: 15px 30px !important;
+}
+.work-tabs .tabs-content {
+    padding: 20px;
+}
