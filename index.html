@@ -21,7 +21,7 @@
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#main-menu" data-bs-offset="0" tabindex="0" class="position-relative h-75 overflow-auto">
     <div class="page-wrapper">
 
         <div class="preloader"></div>
@@ -31,7 +31,8 @@
             <div class="main-box">
                 <div class="logo-box">
                     <div class="logo">
-                        <a href="index.html"><img src="images/logo.png" alt="Anchor Logo" title="Anchor Logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" style="max-height: 40px;" alt="Anchor Logo" title="Anchor Logo">
                         </a>
                     </div>
                 </div>
@@ -39,8 +40,8 @@
                 <div class="nav-outer">
                     <nav class="nav main-menu">
                         <ul class="navigation">
-                            <li class="current">
-                                <a href="index.html">Home</a>
+                            <li>
+                                <a class="active" href="#home">Home</a>
                             </li>
                             <li>
                                 <a href="#about">About</a>
@@ -86,7 +87,7 @@
 
                         <div class="nav-outer">
 
-                            <nav class="main-menu">
+                            <nav id="main-menu" class="main-menu">
                                 <div class="navbar-collapse show collapse clearfix">
                                     <ul class="navigation clearfix">
 
@@ -102,7 +103,7 @@
         </header>
 
 
-        <section class="main-slider">
+        <section id="home" class="main-slider">
             <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
                 <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                     <ul>
@@ -431,7 +432,7 @@
             </div>
         </section>
 
-        <section class="team-section">
+        <section id="team" class="team-section">
             <div class="auto-container">
                 <div class="sec-title text-center">
                     <span class="sub-title">our team members</span>
@@ -499,20 +500,29 @@
             </div>
         </section>
 
-        <section class="map-section">
+        <section id="contact" class="map-section">
             <div class="auto-container">
                 <div class="outer-box">
                     <div class="row g-0">
 
-                        <div class="contact-info-block-two col-lg-4 col-md-12 col-sm-12">
+                        <div class="contact-info-block-two col-lg-3 col-md-12 col-sm-12">
                             <div class="inner">
                                 <i class="icon fa fa-phone-volume"></i>
                                 <h6 class="title">Have question?</h6>
-                                <div class="text"><a href="tel:+966 539 366 110">+966 539 366 110</a></div>
+
+                                <div class="text"><a href="tel:+966539366110">+966 539 366 110</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-info-block-two col-lg-3 col-md-12 col-sm-12">
+                            <div class="inner">
+                                <i class="icon fa-brands fa-whatsapp"></i>
+                                <h6 class="title">Whatsapp</h6>
+                                <div class="text"><a href="https://wa.me/201004843987">+2 0100 484 3987</a></div>
+
                             </div>
                         </div>
 
-                        <div class="contact-info-block-two col-lg-4 col-md-12 col-sm-12">
+                        <div class="contact-info-block-two col-lg-3 col-md-12 col-sm-12">
                             <div class="inner">
                                 <i class="icon fa fa-envelope"></i>
                                 <h6 class="title">Send email</h6>
@@ -520,7 +530,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-info-block-two col-lg-4 col-md-12 col-sm-12">
+                        <div class="contact-info-block-two col-lg-3 col-md-12 col-sm-12">
                             <div class="inner">
                                 <i class="icon fa fa-map-marker-alt"></i>
                                 <h6 class="title">Visit anytime</h6>
