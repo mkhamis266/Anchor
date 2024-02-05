@@ -5,11 +5,13 @@
 .work-tabs .tab-buttons{
     margin-top: 0;
     width: 100%;
+    max-width: 100%;
 }
 .work-tabs .tab-buttons .tab-btn {
-    font-size: 20px;
+    font-size: clamp(1rem, 2vw, 1.5rem); 
     line-height: unset;
-    padding: 15px 30px !important;
+    width: 33.3%;
+    padding: 5px;
 }
 .work-tabs .tabs-content {
     padding: 20px;
